@@ -18,9 +18,7 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Clone repository
-        run: git clone https://github.com/odysen/infra_websitePlaceholder
-      - name: Remove previous artifact
-        run: rm -rf infra_websiteProduction
-      - name: Move in-place
-        run: mv infra_websitePlaceholder infra_websiteProduction
+      - name: cd into repo
+        run: cd infra_websiteProduction
+      - name: pull latest
+        run: git pull
