@@ -2,6 +2,7 @@ name: Deploy static HTML to domain
 defaults:
   run:
     shell: bash
+    working-directory: infra_websiteProduction
 
 on:
   push:
@@ -18,5 +19,5 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: pull latest
-        run: git pull --exec-path infra_websiteProduction
+      - name: pull
+        uses: git pull
