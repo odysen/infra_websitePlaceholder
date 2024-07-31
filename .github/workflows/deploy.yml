@@ -2,7 +2,7 @@ name: Deploy static HTML to domain
 defaults:
   run:
     shell: bash
-    working-directory: infra_websiteProduction
+    working-directory: infra_websitePlaceholder
 
 on:
   push:
