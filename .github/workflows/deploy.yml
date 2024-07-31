@@ -18,7 +18,5 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: cd into repo
-        run: cd infra_websiteProduction
       - name: pull latest
-        run: git pull
+        run: git pull --exec-path infra_websiteProduction
