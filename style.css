@@ -79,23 +79,21 @@ h1 {
   transition: cubic-bezier(0.2, 0, 0.1, 1) 150ms;
   width: relative;
   padding: 1.25rem;
+  padding-right: 10.5px;
   margin-bottom: 5px;
   background-color: #040511;
   border-radius: 15px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media screen and (max-width: 541px) {
   h1 {
     font-size: 2.75rem;
   }
-
-  .socials {
-    letter-spacing: 0.75rem;
-  }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (min-width:1025px) {
   .socials {
-    letter-spacing: 0.15rem;
+    font-size: 1.85rem;
   }
 }
