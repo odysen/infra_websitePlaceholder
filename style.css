@@ -30,7 +30,6 @@ body {
 .center {
   position: relative;
   z-index: 1;
-
   display: flex;
   flex-direction: column;
   text-wrap: wrap;
@@ -43,23 +42,20 @@ body {
 }
 
 .onhoverbutton {
-  color: var(--accent);
+  color: var(--text);
   font-size: inherit;
   text-decoration: none;
-  border-radius: 1000px;
-  font-weight: 500;
   transition: cubic-bezier(0.2, 0, 0.1, 1) 150ms;
   text-wrap: nowrap;
 }
 
 .onhoverbutton:hover {
-  background: var(--accent);
-  color: var(--background);
-  padding: 6px 12px;
+  color: var(--accent);
 }
 
 h1 {
   font-size: 4rem;
+  transition: cubic-bezier(0.2, 0, 0.1, 1) 150ms;
 }
 
 .logo {
@@ -72,16 +68,29 @@ h1 {
   fill: var(--accent);
 }
 
-.joindiscord {
+.socials {
   position: absolute;
   bottom: 1.5rem;
   text-align: center;
   padding: 0 2rem;
   line-height: 1.75rem;
+  font-size: 2rem;
+  letter-spacing: 1.75rem;
+  transition: cubic-bezier(0.2, 0, 0.1, 1) 150ms;
 }
 
 @media screen and (max-width: 541px) {
   h1 {
     font-size: 2.75rem;
+  }
+
+  .socials {
+    letter-spacing: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .socials {
+    letter-spacing: 0.15rem;
   }
 }
