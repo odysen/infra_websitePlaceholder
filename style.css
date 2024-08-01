@@ -77,7 +77,6 @@ h1 {
   font-size: 2rem;
   letter-spacing: 1.75rem;
   transition: cubic-bezier(0.2, 0, 0.1, 1) 150ms;
-  width: relative;
   padding: 1.25rem;
   padding-right: 10.5px;
   background-color: #1c1c2d;
