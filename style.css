@@ -77,25 +77,29 @@ h1 {
   font-size: 2rem;
   letter-spacing: 1.75rem;
   transition: cubic-bezier(0.2, 0, 0.1, 1) 150ms;
-  width: relative;
   padding: 1.25rem;
-  margin-bottom: 5px;
-  background-color: #040511;
+  padding-right: 10.5px;
+  background-color: #1c1c2d;
   border-radius: 15px;
+  border: 1.5px solid #3f3f4f;
+  -webkit-tap-highlight-color: transparent;
+  margin-bottom: 1.25rem;
 }
 
 @media screen and (max-width: 541px) {
   h1 {
     font-size: 2.75rem;
   }
+}
 
+@media screen and (min-width:1025px) {
   .socials {
-    letter-spacing: 0.75rem;
+    font-size: 1.75rem;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .socials {
-    letter-spacing: 0.15rem;
+    .socials {
+      letter-spacing: 1.25rem;
   }
 }
