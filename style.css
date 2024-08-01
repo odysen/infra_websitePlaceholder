@@ -81,8 +81,9 @@ h1 {
   padding: 1.25rem;
   padding-right: 10.5px;
   margin-bottom: 5px;
-  background-color: #040511;
+  background-color: #1c1c2d;
   border-radius: 15px;
+  border: 1.5px solid #3f3f4f;
   -webkit-tap-highlight-color: transparent;
 }
 
