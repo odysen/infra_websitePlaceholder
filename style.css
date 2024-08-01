@@ -96,3 +96,9 @@ h1 {
     font-size: 1.75rem;
   }
 }
+
+@media screen and (max-width: 350px) {
+    .socials {
+      letter-spacing: 1.25rem;
+  }
+}
