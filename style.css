@@ -53,11 +53,7 @@ body {
   color: var(--accent);
 }
 
-h1 {
-  font-size: 4rem;
-  transition: cubic-bezier(0.2, 0, 0.1, 1) 150ms;
-}
-
+/* Background logo */
 .logo {
   position: absolute;
   opacity: 0.1;
@@ -68,14 +64,9 @@ h1 {
   fill: var(--accent);
 }
 
-.socials {
-  position: absolute;
-  bottom: 0.5rem;
-  text-align: center;
-  padding: 0 2rem;
-  line-height: 1.75rem;
-  font-size: 2rem;
-  letter-spacing: 1.75rem;
+/* Main text */
+h1 {
+  font-size: 4rem;
   transition: cubic-bezier(0.2, 0, 0.1, 1) 150ms;
   padding: 1.25rem;
   padding-right: 10.5px;
@@ -85,14 +76,72 @@ h1 {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Socials dock-bar */
+.socials {
+  /* Positioning, padding */
+  position: absolute;
+  padding: 1.25rem;
+  padding-right: 10.5px;
+
+  /* Text formatting */
+  text-align: center;
+  line-height: 1.75rem;
+  font-size: 2rem;
+  letter-spacing: 1.75rem;
+
+  /* Bottom dock */
+  background-color: #1c1c2d;
+  border-radius: 15px;
+  border: 1.5px solid #3f3f4f;
+  margin-bottom: 1.25rem;
+
+  /* Disable highlighting when tapping on text */
+  -webkit-tap-highlight-color: transparent;
+
+  /* Resizing transition */
+  transition: cubic-bezier(0.2, 0, 0.1, 1) 150ms;
+
+  /* Appearing animation */
+  animation: appear 1.15s cubic-bezier(0.55, 0, 0.25, 0.95) forwards;
+}
+
+/* Animation(s) */
+@keyframes appear {
+  /* Position to start the animation from */
+  from {
+    bottom: -10rem;
+  }
+  /* Position to end the animation at */
+  to {
+    bottom: 0.5rem;
+  }
+}
+
+/* Target: phones */
 @media screen and (max-width: 541px) {
   h1 {
     font-size: 2.75rem;
   }
+<<<<<<< HEAD
 }
 
 @media screen and (min-width:1025px) {
   .socials {
     font-size: 1.75rem;
+=======
+}
+
+/* Target: desktop */
+@media screen and (min-width:1025px) {
+  .socials {
+    font-size: 1.75rem;
+  }
+}
+
+/* Target: small devices */
+@media screen and (max-width: 350px) {
+    .socials {
+      letter-spacing: 1.25rem;
+>>>>>>> main
   }
 }
